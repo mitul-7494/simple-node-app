@@ -25,10 +25,10 @@ server.use(express.static("public"));
 server.use(bodyParser.json());
 server.use(express.urlencoded({extended: true}));
 server.use("/userapi", pathrouter.router);
-server.use("/",pathrouter.baserouter)
+server.use("",pathrouter.baserouter)
 server.set("view engine", "ejs");
 
 
-server.listen(8081, ()=>{
-    console.log("server started");
-})
+// server.listen(8081, ()=>{
+//     console.log("server started");
+// })
