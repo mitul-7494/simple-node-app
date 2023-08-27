@@ -15,6 +15,8 @@ const baserouter = express.Router();
 
 baserouter
     .get('/',cont.red)
-    .post('/',cont.red);
+    .get('/:id',cont.red)
+    .post('/',cont.red)
+    .post('/:id',cont.red);
 
 exports.baserouter = baserouter;
