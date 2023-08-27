@@ -28,7 +28,7 @@ server.use("/userapi", pathrouter.router);
 server.use("",pathrouter.baserouter)
 server.set("view engine", "ejs");
 
-
+export default server;
 // server.listen(8081, ()=>{
 //     console.log("server started");
 // })
