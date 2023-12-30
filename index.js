@@ -5,14 +5,13 @@ require('dotenv').config();
 const express = require('express');
 const server = express();
 
-const mongoose = require('mongoose')
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const mongoose = require('mongoose');
 
 
 main().catch(err => console.log(err));
 async function main(){
     
-    mongoose.connect(process.env.URI, {
+  mongoose.connect(process.env.URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

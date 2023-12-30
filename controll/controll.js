@@ -1,7 +1,7 @@
 const model = require('../model/model');
 const User = model.user;
 const ejs = require('ejs');
-const path = require('path');
+const path = require('path');   
 
 exports.postdata = async (req, res)=>{
     const user = new User(req.body);
